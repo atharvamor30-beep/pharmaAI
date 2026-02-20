@@ -1,0 +1,6 @@
+flask>=2.2
+werkzeug>=2.2
+cyvcf2>=0.30
+pandas>=2.0
+numpy>=1.24
+groq>=0.9
