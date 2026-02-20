@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--bg: #F8FAFC;
+	--surface: #FFFFFF;
+	--text: #0F172A;
+	--muted: #64748B;
+	--primary: #0EA5E9;
+	--success: #10B981;
+	--warning: #F59E0B;
+	--danger: #EF4444;
+}
+
+html,
+body,
+#root {
+	height: 100%
+}
+
+body {
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif;
+	font-size: 19px;
+	background-color: #F8FAFC;
+	color: #1E293B;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.15
+}
+
+.card {
+	background: #FFFFFF;
+	border-radius: 12px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+	border: 1px solid #E2E8F0
+}
+
+.muted {
+	color: var(--muted)
+}
+
+.badge {
+	font-weight: 700;
+	padding: 0.25rem 0.6rem;
+	border-radius: 9999px;
+	font-size: 0.78rem
+}
+
+.badge.safe {
+	background: #D1FAE5;
+	color: #047857
+}
+
+.badge.warn {
+	background: #FEF3C7;
+	color: #B45309
+}
+
+.badge.danger {
+	background: #FEE2E2;
+	color: #DC2626
+}
+
+.transition-soft {
+	transition: all 200ms cubic-bezier(.2, .9, .2, 1)
+}
+
+.skeleton {
+	background: linear-gradient(90deg, rgba(203, 213, 225, 0.5) 0%, rgba(226, 232, 240, 0.8) 50%, rgba(203, 213, 225, 0.5) 100%);
+	background-size: 200% 100%;
+	animation: shimmer 1.2s infinite
+}
+
+@keyframes shimmer {
+	0% {
+		background-position: 200% 0
+	}
+
+	100% {
+		background-position: -200% 0
+	}
+}
+
+.tooltip {
+	background: rgba(15, 23, 42, 0.9);
+	color: #FFFFFF;
+	padding: 6px 8px;
+	border-radius: 8px;
+	font-size: 12px
+}
+
+.gradient-hero {
+	background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 40%, #CFFAFE 100%)
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animate-fadeIn {
+	animation: fadeIn 0.3s ease-out forwards;
+}
+
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}

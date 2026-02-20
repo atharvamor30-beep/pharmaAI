@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+
+# Environment variables (API keys)
+.env
+backend/.env
+pharma_ml/.env
+
+# Build outputs
+frontend/dist/
+Output/
+
+# Vite cache
+.vite/
+
+# Temp uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# UV lock
+uv.lock
+
+# Misc
+=2.0
